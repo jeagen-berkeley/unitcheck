@@ -11,7 +11,7 @@
 //  RED    ✗  = test failed — read the error to see what went wrong
 //
 //  Your job today is to fix the two broken tests (they fail on purpose)
-//   
+//
 //
 //
 // =============================================================================
@@ -39,16 +39,19 @@ test("zero km should return zero miles", () => {
 // ─────────────────────────────────────────────────────────────────────────────
 //  PART A — SOLVE THESE  (both currently FAILING — find the bug and fix it)
 //
-//  
+//
 //  Run the tests, read the error message, then fix the wrong number.
 //  When all turn green, the tests are passing.
 // ─────────────────────────────────────────────────────────────────────────────
 
 test("boiling point: 100°C should equal 212°F", () => {
-  expect(celsiusToFahrenheit(100)).toBe(999); 
+  expect(celsiusToFahrenheit(100)).toBe(212);
 });
-
 
 test("1 Liter should equal 0.26 gallons rounded", () => {
   expect(litersToGallons(1)).toBe(0.26);
+});
+
+test("3.785 Liters should be equal to 1.0 gallons rounded", () => {
+  expect(litersToGallons(3.785)).toBe(1.0);
 });
